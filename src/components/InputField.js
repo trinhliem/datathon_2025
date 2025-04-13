@@ -1,7 +1,10 @@
-const Header = ({ title }) => (
-    <div className="bg-red-600 text-white p-6 flex items-center">
-        <span className="text-3xl mr-4">❤️</span>
-        <h1 className="text-xl font-semibold">{title}</h1>
+const InputField = ({ label, ...props }) => (
+    <div className="mb-4">
+        <label className="block text-gray-700">{label}</label>
+        <input
+            className="w-full mt-1 p-2 border border-gray-300 rounded"
+            {...props}
+        />
     </div>
 );
-export default Header;
+export default InputField;
